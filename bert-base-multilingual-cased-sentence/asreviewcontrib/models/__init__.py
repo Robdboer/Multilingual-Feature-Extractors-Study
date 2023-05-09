@@ -1,0 +1,1 @@
+from asreviewcontrib.models.bert_base_multilingual import bertbasemultilingual
