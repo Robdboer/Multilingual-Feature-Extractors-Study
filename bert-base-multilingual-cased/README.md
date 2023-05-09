@@ -17,7 +17,7 @@ pip install -U transformers
 
 ```
 
-Then install the mBERT multilingual feature extractor with:
+Then install the bert-base-multilingual-cased feature extractor with:
 
 ```bash
 pip install git+https://github.com/Robdboer/bert-base-multilingual-cased.git
