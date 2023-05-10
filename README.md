@@ -1,23 +1,19 @@
 # Multilingual Feature Extractors for Systematic Literature Review: A Comparison Study
 
-##Introduction
+## Introduction
 
 
-##Installation
+## Installation
 
 
-##Usage
+## Usage
 
 
-##License
+## License
 
 
 ##Contact information
-
 Rob den Boer
-
 R.j.s.denboer@students.uu.nl
-
-ASReview
-
 Utrecht University
+ASReview
