@@ -1,4 +1,4 @@
-# Multilingual Feature Extractors for Systematic Literature Review: A Comparison Study
+# Multilingual Feature Extractors for Systematic Literature Review in ASReview: A Comparison Study
 
 ## Introduction
 
