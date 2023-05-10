@@ -12,8 +12,11 @@
 ## License
 
 
-##Contact information
+## Contact information
 Rob den Boer
+
 R.j.s.denboer@students.uu.nl
+
 Utrecht University
+
 ASReview
