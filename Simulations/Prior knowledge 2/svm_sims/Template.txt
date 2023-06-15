@@ -1,0 +1,3 @@
+asreview makita template multiple_models --classifiers logistic svm --feature_extractors muse minilm mpnet stsb -f jobs.bat --model_seed 19 --init_seed 32
+
+['tfidf', 'sbert', 'mbert', 'distiluse', 'mlongt5', 'labse', 'laser', 'mpnet', 'minilm', 'stsb']
