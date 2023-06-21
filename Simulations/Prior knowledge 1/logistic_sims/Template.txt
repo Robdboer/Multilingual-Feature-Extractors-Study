@@ -1,1 +1,0 @@
-asreview makita template multiple_models --classifiers logistic --feature_extractors distiluse tfidf sbert mpnet -f jobs.bat
