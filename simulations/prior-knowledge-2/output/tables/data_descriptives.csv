@@ -1,0 +1,5 @@
+,n_records,n_relevant,n_irrelevant,n_unlabeled,n_missing_title,n_missing_abstract,n_duplicates
+data_stats_Hamilton_English.json,1859,87,1772,0,5,305,9
+data_stats_Hamilton_Multi_1.json,1859,87,1772,0,5,305,9
+data_stats_Hamilton_Multi_2.json,1859,87,1772,0,5,305,9
+data_stats_Hamilton_Original.json,1859,87,1772,0,5,305,9
