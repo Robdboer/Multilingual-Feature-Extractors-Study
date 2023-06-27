@@ -1,1 +1,0 @@
-asreview makita template multiple_models --classifiers svm logistic --feature_extractors tfidf sbert muse minilm mpnet stsb labse mbert mlongt5 laser -f jobs.bat
