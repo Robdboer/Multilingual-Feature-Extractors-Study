@@ -1,1 +1,0 @@
-{"version": "1.2", "id": "sim_Hamilton_Original_svm_minlm_0", "mode": "simulate", "name": "sim_Hamilton_Original_svm_minlm_0", "description": "Simulation created via ASReview via command line interface", "authors": null, "created_at_unix": 1685549435, "datetimeCreated": "2023-05-31 18:10:35.677138", "reviews": [], "feature_matrices": [], "dataset_path": "Hamilton_Original.csv"}
