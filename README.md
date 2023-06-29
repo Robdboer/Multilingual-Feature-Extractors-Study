@@ -13,7 +13,7 @@ The classifier used in this simulation study is provided by the [ASReview](https
 pip install asreview
 ```
 
-Also install makita, insights by:
+Also install essential add-ons for ASReview by:
 
 ```bash
 pip install asreview-makita
@@ -35,7 +35,7 @@ pip install git+https://github.com/Robdboer/multilingual-feature-extractors.git
 
 The data used in this study consists of the metadata of a systematic review of Hamilton & Murphy (2023) [source](https://osf.io/3u982/) and is placed in the folder `raw_data/data` under the name `Hamilton_Download.csv`.
 
-Besides some preprocessing, the data has to be split up into four sets for study purposes. This can be done by running the notebook placed in `raw_data/scripts`
+Together with some preprocessing, the data has to be split up into four sets for study purposes. This can be done by running the cells in the notebook  `raw_data/scripts/Preprocess Hamilton raw.ipynb`
 For more detailed instructions, navigate to `raw_data/readme.md`
 
 
@@ -53,7 +53,7 @@ After all simulations are finished, navigate to the folder `simulations/prior-kn
 
 ## Results
 
-To process the results, run the notebook in the `scripts` folder.
+To process the results, run the cells in the notebook `scripts/Simulation Results.ipynb`.
 
 First, all simulation state files will be copied into a newly created folder `simulations/state_files`
 
