@@ -1,0 +1,10 @@
+asreview
+asreview-makita
+asreview-insights
+asreview-wordcloud
+git+https://github.com/Robdboer/multilingual-feature-extractors.git
+sentence-transformers
+transformers
+laserembeddings
+torch
+langdetect

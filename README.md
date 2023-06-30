@@ -2,71 +2,76 @@
 
 ## Introduction
 
-This repository contains the scripts and supporting files for a simulation study on Multilingual Feature Extractors for Abastract Classification. More detailed information on the study findings can be found in the paper. To guarantee reproducibility, this readme provides instructions on how to install the required feature extraction models, run the simulations and analyze the results.
+Multilingual Feature Extractors are vital tools for handling text classification tasks, including abstract classification, across multiple languages. These models allow us to gather insights from diverse languages, fostering better understanding and comparative analysis.
+
+This repository supports a simulation study aimed at evaluating the effectiveness of different Multilingual Feature Extractors for Abstract Classification. The study findings are detailed in the corresponding paper, and this README provides the necessary guidance for reproducing the study: from installation of models, through simulations, to result analysis. Our aim is to help inform and guide the future of multilingual text classification.
 
 
 ## Installation
 
-The classifier used in this simulation study is provided by the [ASReview](https://github.com/asreview) software. Which can be installed by:
+The simulations require several Python packages that you can install using pip. We highly recommend setting up a virtual environment before proceeding with the installation to ensure that the package versions used in this project do not conflict with those in other projects.
+
+Python version 3.8 or above is required.
+
+We've included a requirements.txt file in the repository containing all the necessary dependencies. After activating the virtual environment, you can install all required packages using the following command:
 
 ```bash
-pip install asreview
+pip install -r requirements.txt
 ```
 
-Also install essential add-ons for ASReview by:
-
-```bash
-pip install asreview-makita
-
-pip install asreview-insights
-
-pip install asreview-wordcloud
-```
-
-The [feature extractor models](https://github.com/Robdboer/Multilingual-Feature-Extractors) evaluated in this study were implemented in the ASReview software and can be installed by:
-
-```bash
-pip install git+https://github.com/Robdboer/multilingual-feature-extractors.git
-```
-
-*Some of the models depend on the installation of other packages, please refer to the [repository](https://github.com/Robdboer/Multilingual-Feature-Extractors) to install these required packages.
+> Note: The multilingual-feature-extractors package is installed directly from its GitHub repository. For more information on all models, please refer to the [repository](https://github.com/Robdboer/Multilingual-Feature-Extractors) of the multilingual-feature-extractors.
 
 ## Data preparation
 
-The data used in this study consists of the metadata of a systematic review of Hamilton & Murphy (2023) [source](https://osf.io/3u982/) and is placed in the folder `raw_data/data` under the name `Hamilton_Download.csv`.
+The data for this study comes from the systematic review of Hamilton & Murphy (2023) [source](https://osf.io/3u982/), which we've placed under the raw_data/data folder with the filename `Hamilton_Download.csv`.
 
-Together with some preprocessing, the data has to be split up into four sets for study purposes. This can be done by running the cells in the notebook  `raw_data/scripts/Preprocess Hamilton raw.ipynb`
-For more detailed instructions, navigate to `raw_data/readme.md`
+Before we can use this data, we need to carry out two preprocessing steps:
 
+1. Cleaning: We first clean the data to remove any irrelevant features and handle missing values as appropriate.
 
-After running all cells, the four datasets will be put into the simulation data folders.
+2. Splitting the Data: The preprocessed data is then split into four distinct sets for simulation purposes. The proportions of these sets vary based on the study design.
+
+All these preprocessing steps can be performed by running the provided notebook `Preprocess Hamilton raw.ipynb` located in `data/scripts`. After running all cells in this notebook, the four preprocessed datasets will be generated and stored in the appropriate simulation data folders. For more detailed instructions, navigate to `raw_data/readme.md`
+
+Please note that the data processing and preparation steps can vary depending on the specific requirements of a study. In case of any custom modifications, please adapt the instructions accordingly.
 
 
 ## Simulations
 
-For practical reasons, the simulations were split up into two prior knowledge seeds (Folder: `simulations/prior-knowledge-x`). For both prior knowledge combinations, simulations will be run for all ten models, on the four different datasets, for both a SVM and Logistic classifier. This will result in a total of 160 simulations.
+The simulation study involves evaluating ten different models on four datasets using both SVM and Logistic classifiers, and two prior knowledge sets, yielding a total of 160 simulations. To streamline the process and efficiently manage resources, these simulations are split into two sets, each associated with a different "prior knowledge seed".
 
-To run the first 80, navigate to the folder `simulations/prior-knowledge-1` and run the jobs.bat file.
+A "prior knowledge seed" defines the starting prior knowledge papers for each set of simulations, allowing us to test model performance under different initial states.
 
-After all simulations are finished, navigate to the folder `simulations/prior-knowledge-2` and run the jobs.bat file.
+To conduct the simulations:
+
+1. Navigate to 'simulations/prior-knowledge-1` and run the jobs.bat file. This initiates the first 80 simulations.
+
+2.  Once the first set of simulations finishes, navigate to `simulations/prior-knowledge-2` and again run the jobs.bat file for the remaining 80 simulations.
+
+This structured approach ensures an efficient use of computational resources and enables easier tracking and troubleshooting of the simulation process.
 
 
 ## Results
 
-To process the results, run the cells in the notebook `scripts/Simulation Results.ipynb`.
+Once all simulations are completed, you can proceed with processing the results.
 
-First, all simulation state files will be copied into a newly created folder `simulations/state_files`
+To do this, run the provided Jupyter notebook named `Simulation_Results.ipynb` located in the `scripts folder`. This notebook performs the following tasks:
 
-Then, all evaluation metrics essential for this study will be extracted out of the .asreview state files and stored in a dataframe
+1. Copies all simulation state files into a newly created directory `simulations/state_files`.
 
-To obtain the final, tables, charts and recall plots, run the next cells.
+2. Extracts essential evaluation metrics from the `.asreview` state files and stores them in a DataFrame.
+
+3. Generates final tables, charts, and recall plots.
+
+After executing all cells in `Simulation_Results.ipynb`, you'll find the final tables and charts within the notebook itself. You may also choose to export these for further use or presentation.
 
 
 ## License
 
-MIT License
+This project is licensed under the terms of the MIT license. For more information, see the [LICENSE](LICENCE) file in the root of this repository.
 
 ## Contact information
+
 Rob den Boer
 
 R.j.s.denboer@students.uu.nl
