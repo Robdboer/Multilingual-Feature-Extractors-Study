@@ -68,7 +68,7 @@ After executing all cells in `Simulation_Results.ipynb`, you'll find the final t
 
 ## License
 
-This project is licensed under the terms of the MIT license. For more information, see the [LICENSE](LICENCE) file in the root of this repository.
+This project is licensed under the terms of the MIT license. For more information, see the [LICENSE](https://github.com/Robdboer/Multilingual-Feature-Extractors-Study/blob/main/LICENSE) file in the root of this repository.
 
 ## Contact information
 
