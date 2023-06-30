@@ -13,7 +13,7 @@ The simulations require several Python packages that you can install using pip. 
 
 Python version 3.8 or above is required.
 
-We've included a requirements.txt file in the repository containing all the necessary dependencies. After activating the virtual environment, you can install all required packages using the following command:
+We've included a requirements.txt file in the repository containing all the necessary dependencies. You can install all required packages using the following command:
 
 ```bash
 pip install -r requirements.txt
