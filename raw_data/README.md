@@ -1,18 +1,14 @@
 # Data Preprocessing
 
 ## Introduction
-To prepare the raw data for usage in the simulation study, it needs to be preprocessed.
+Before the raw data can be used in the simulation study, it must undergo preprocessing. This involves cleaning, transforming, and organizing the data to make it suitable for the study.
 
-1. Run the cells in the notebook `scrips/Preprocess Hamilton raw.ipynb`
+## Steps
 
-2. All new data files will be stored in the data folders of each simulation directory
+1. Open the Jupyter notebook named `Preprocess_Hamilton_Raw.ipynb` found in the scripts directory.
 
+2. Run all cells in the notebook. This will execute the preprocessing operations on the raw data.
 
-## Contact information
-Rob den Boer
+3. After processing, new data files are generated and automatically stored in the data folders of each respective simulation directory.
 
-R.j.s.denboer@students.uu.nl
-
-Utrecht University
-
-ASReview
+This ensures that the data is in the correct format and is readily available for the simulation stage of our study.
