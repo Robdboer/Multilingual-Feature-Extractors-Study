@@ -6,9 +6,9 @@ Before the raw data is ready for use in the simulation study, it needs to be fet
 
 ## Steps
 
-1. Data Retrieval: First, fetch the data by running the `get_data.bat` file in the `scripts` directory. This script uses datahugger to download the data from the provided DOI or data source. The data will be stored as `C.Hamilton Songs Systematic Review data.csv` in the `data` folder.
+1. Data Retrieval: First, fetch the data by running the `get_data.bat` file in the `raw_data/scripts` directory. This script uses datahugger to download the data from the provided DOI or data source. The data will be stored as `C.Hamilton Songs Systematic Review data.csv` in the `raw_data/data` folder.
 
-2. Access Preprocessing Notebook: After fetching the data, locate the Jupyter notebook `Preprocess_Hamilton_Raw.ipynb` in the `scripts` directory.
+2. Access Preprocessing Notebook: After fetching the data, locate the Jupyter notebook `Preprocess_Hamilton_Raw.ipynb` in the `raw_data/scripts` directory.
 
 3. Run Notebook: Execute all the cells in the notebook. This will perform the necessary preprocessing operations on the raw data.
 
