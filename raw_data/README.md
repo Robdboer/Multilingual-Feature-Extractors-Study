@@ -1,14 +1,17 @@
 # Data Preprocessing
 
-## Introduction
-Before the raw data can be used in the simulation study, it must undergo preprocessing. This involves cleaning, transforming, and organizing the data to make it suitable for the study.
+##Introduction
 
-## Steps
+Before the raw data is ready for use in the simulation study, it needs to be fetched and undergo preprocessing. This involves retrieving the data from the source, cleaning it, transforming it into a suitable format, and organizing it for effective use in the simulations.
 
-1. Open the Jupyter notebook named `Preprocess_Hamilton_Raw.ipynb` found in the scripts directory.
+##Steps
 
-2. Run all cells in the notebook. This will execute the preprocessing operations on the raw data.
+1. Data Retrieval: First, fetch the data by running the `get_data.bat` file in the `scripts` directory. This script uses datahugger to download the data from the provided DOI or data source. The data will be stored as `C.Hamilton Songs Systematic Review data.csv` in the `data` folder.
 
-3. After processing, new data files are generated and automatically stored in the data folders of each respective simulation directory.
+2. Access Preprocessing Notebook: After fetching the data, locate the Jupyter notebook `Preprocess_Hamilton_Raw.ipynb` in the `scripts` directory.
 
-This ensures that the data is in the correct format and is readily available for the simulation stage of our study.
+3. Run Notebook: Execute all the cells in the notebook. This will perform the necessary preprocessing operations on the raw data.
+
+4. Data Storage: After the data has been processed, the newly formatted data files are automatically saved in the data folders for each respective simulation directory.
+
+Following these steps ensures that your data is appropriately prepared and in the correct format for use in the simulation stage of the study. These guidelines help maintain consistency and accuracy in the simulation results.

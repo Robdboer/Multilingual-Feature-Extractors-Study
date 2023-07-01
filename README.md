@@ -23,17 +23,23 @@ pip install -r requirements.txt
 
 ## Data preparation
 
-The data for this study comes from the systematic review of Hamilton & Murphy (2023) [source](https://osf.io/3u982/), which we've placed under the raw_data/data folder with the filename `Hamilton_Download.csv`.
+The data used in this study is derived from the systematic review of Hamilton & Murphy (2023) [source](https://osf.io/3u982/).
 
-Before we can use this data, we need to carry out two preprocessing steps:
+To fetch the data:
 
-1. Cleaning: We first clean the data to remove any irrelevant features and handle missing values as appropriate.
+1. Data Retrieval: Run the `get_data.bat` file located in the `raw_data/scripts` directory. This script uses datahugger to download the data from the provided DOI.
 
-2. Splitting the Data: The preprocessed data is then split into four distinct sets for simulation purposes. The proportions of these sets vary based on the study design.
+2. Data Storage: Upon successful retrieval, the data will be stored in the `raw_data/data` folder. The file is named `C.Hamilton Songs Systematic Review data.csv`.
 
-All these preprocessing steps can be performed by running the provided notebook `Preprocess Hamilton raw.ipynb` located in `data/scripts`. After running all cells in this notebook, the four preprocessed datasets will be generated and stored in the appropriate simulation data folders. For more detailed instructions, navigate to `raw_data/readme.md`
+Before the data can be used in the simulation study, it needs to undergo the following preprocessing steps:
 
-Please note that the data processing and preparation steps can vary depending on the specific requirements of a study. In case of any custom modifications, please adapt the instructions accordingly.
+1. Cleaning: This involves removing irrelevant features and handling missing values.
+
+2. Data Splitting: The cleaned data is then divided into four distinct sets to serve the simulation needs. The specific proportions of these sets depend on the requirements of the study.
+
+These preprocessing operations can be performed by running the provided Jupyter notebook named Preprocess_Hamilton_raw.ipynb found in the data/scripts directory. After executing all cells in the notebook, the four preprocessed datasets are automatically stored in the respective simulation data folders.
+
+For a more detailed step-by-step guide on data preprocessing, refer to the README file in the raw_data directory: raw_data/readme.md.
 
 
 ## Simulations

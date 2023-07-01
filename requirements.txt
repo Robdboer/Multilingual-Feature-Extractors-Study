@@ -8,3 +8,4 @@ transformers
 laserembeddings
 torch
 langdetect
+datahugger
