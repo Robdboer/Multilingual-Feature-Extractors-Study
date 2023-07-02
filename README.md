@@ -39,7 +39,7 @@ Before the data can be used in the simulation study, it needs to undergo the fol
 
 These preprocessing operations can be performed by running the provided Jupyter notebook named Preprocess_Hamilton_raw.ipynb found in the data/scripts directory. After executing all cells in the notebook, the four preprocessed datasets are automatically stored in the respective simulation data folders.
 
-For a more detailed step-by-step guide on data preprocessing, refer to the README file in the raw_data directory: raw_data/readme.md.
+For a more detailed step-by-step guide on data preprocessing, refer to the README file in the raw_data directory: `raw_data/readme.md`.
 
 
 ## Simulations
@@ -50,7 +50,7 @@ A "prior knowledge seed" defines the starting prior knowledge papers for each se
 
 To conduct the simulations:
 
-1. Navigate to 'simulations/prior-knowledge-1` and run the jobs.bat file. This initiates the first 80 simulations.
+1. Navigate to `simulations/prior-knowledge-1` and run the jobs.bat file. This initiates the first 80 simulations.
 
 2.  Once the first set of simulations finishes, navigate to `simulations/prior-knowledge-2` and again run the jobs.bat file for the remaining 80 simulations.
 
