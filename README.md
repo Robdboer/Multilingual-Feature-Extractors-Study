@@ -23,7 +23,7 @@ pip install -r requirements.txt
 
 ## Data preparation
 
-The data used in this study is derived from the systematic review of Hamilton & Murphy (2023) [source](https://osf.io/3u982/).
+The data used in this study is derived from a systematic review of [Hamilton & Murphy (2023)](https://osf.io/3u982/).
 
 To fetch the data:
 
@@ -61,7 +61,7 @@ This structured approach ensures an efficient use of computational resources and
 
 Once all simulations are completed, you can proceed with processing the results.
 
-To do this, run the provided Jupyter notebook named `Simulation_Results.ipynb` located in the `scripts folder`. This notebook performs the following tasks:
+To do this, run the provided Jupyter notebook named `Simulation_Results.ipynb` located in the `scripts` folder. This notebook performs the following tasks:
 
 1. Copies all simulation state files into a newly created directory `simulations/state_files`.
 
