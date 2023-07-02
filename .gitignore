@@ -1,4 +1,5 @@
 .ipynb_checkpoints
+state_files
 output
 template.txt
 *.asreview
